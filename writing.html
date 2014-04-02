@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+***************************************
+*  designed by MATTHEW ZIPKIN 2012    *
+* matthew(dot)zipkin(at)gmail(dot)com *
+***************************************
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name='viewport' content='width=1500, user-scalable=no'>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-touch-fullscreen" content="yes">
+<title>Writing</title>
+	
+<link type="text/css" href="css/writing.css" rel="stylesheet" />
+<link type="text/css" href="fonts/SF_Cartoonist_Hand/SF_Cartoonist_Hand.css" rel="stylesheet" />
+
+<!-- jQuery and jQuery UI for draggables, effects and cookies -->
+<script type="text/javascript" src="include/jquery-1.7.2.min.js"></script>
+
+<!-- application code -->
+<script type="text/javascript" src="js/writing.js"></script>
+
+
+
+</head>
+<body>
+
+<audio id="alphawords" src="audio/alphawords.mp3" type="audio/mp3" style="display:none">
+	<source src="audio/alphawords.mp3" type="audio/mp3"></source>
+	<source src="audio/alphawords.ogg" type="audio/ogg"></source>
+</audio>
+
+<!-- ***** debug 
+<div id="readout">debug mode</div>
+-->
+
+<div id="mainc">
+	<div id='zstart'>Start!</div>
+	<canvas id='base'></canvas>
+	<div id='screen'></div>
+	<canvas id='canvas'></canvas>
+</div>
+<div id="controls">
+	<div id="volume">
+		<div id="vol0" class="volbutt" onclick="setvolume(0)"></div>
+		<div id="vol1" class="volbutt" onclick="setvolume(1)"></div>
+		<div id="vol2" class="volbutt" onclick="setvolume(2)"></div>
+	</div>
+	<div id="gameword" onclick="playword(abc)"></div>
+	<div id="gamewordpic" onclick="playword(abc)"></div>
+</div>
+</body>
+</html>
